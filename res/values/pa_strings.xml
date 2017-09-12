@@ -206,6 +206,14 @@
     <string name="lockscreen_media_blur_title">Media art blur level</string>
     <string name="lockscreen_media_art_category_title">Media art</string>
 
+    <!-- Network traffic -->
+    <string name="traffic_title">Traffic indicators</string>
+    <string name="traffic_summary">Enable or disable network speed indicators</string>
+    <string name="network_traffic_title">Network traffic</string>
+    <string name="network_traffic_state_title">Show net speed in statusbar</string>
+    <string name="network_traffic_autohide_threshold_title">Net speed autohide threshold (KB/s)</string>
+    <string name="network_traffic_notch_info">Devices with notch may show the indicator only when the status bar is expanded, depending on the size of the notch and available space in status bar</string>
+
     <!-- Add sliders for color balance adjustment via ColorDisplayManager -->
     <string name="color_mode_balance_red">Red strength</string>
     <string name="color_mode_balance_green">Green strength</string>
