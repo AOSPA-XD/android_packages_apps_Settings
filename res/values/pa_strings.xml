@@ -196,4 +196,8 @@
     <string name="navbar_invert_layout_title">Invert Navigation Bar layout</string>
     <string name="navbar_invert_info">This will swap the \"Back\" and \"Recents\" buttons on the navigation bar</string>
 
+    <!-- Notification headers -->
+    <string name="notification_headers_title">Notification Headers</string>
+    <string name="notification_headers_summary">Show headers in the notification shade</string>
+
 </resources>
