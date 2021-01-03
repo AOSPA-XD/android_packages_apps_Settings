@@ -182,4 +182,10 @@
         android:summary="@string/quick_settings_quick_pull_down_summary"
         android:defaultValue="true" />
 
+    <!-- Statusbar Settings -->
+    <Preference
+        android:key="statusbar_settings"
+        android:title="@string/status_bar_title"
+        android:fragment="com.android.settings.aospa.fragments.Statusbar" />
+
 </PreferenceScreen>
