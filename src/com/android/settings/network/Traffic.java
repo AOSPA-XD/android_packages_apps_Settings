@@ -41,8 +41,8 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.android.settings.SettingsPreferenceFragment;
-import me.waveproject.framework.preference.CustomSeekBarPreference;
-import me.waveproject.framework.preference.SystemSettingSwitchPreference;
+import co.aospa.framework.preference.CustomSeekBarPreference;
+import co.aospa.framework.preference.SystemSettingSwitchPreference;
 import com.android.settings.Utils;
 import android.util.Log;
 
