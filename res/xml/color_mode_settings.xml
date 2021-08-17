@@ -25,7 +25,7 @@
         android:title="@string/advanced_section_header"
         android:order="100">
 
-        <me.waveproject.framework.preference.CustomSecureSeekBarPreference
+        <co.aospa.framework.preference.CustomSecureSeekBarPreference
             android:key="display_color_balance_red"
             android:title="@string/color_mode_balance_red"
             android:min="25"
@@ -33,7 +33,7 @@
             android:defaultValue="255"
             settings:keywords="@string/keywords_color_balance" />
 
-        <me.waveproject.framework.preference.CustomSecureSeekBarPreference
+        <co.aospa.framework.preference.CustomSecureSeekBarPreference
             android:key="display_color_balance_green"
             android:title="@string/color_mode_balance_green"
             android:min="25"
@@ -41,7 +41,7 @@
             android:defaultValue="255"
             settings:keywords="@string/keywords_color_balance" />
 
-        <me.waveproject.framework.preference.CustomSecureSeekBarPreference
+        <co.aospa.framework.preference.CustomSecureSeekBarPreference
             android:key="display_color_balance_blue"
             android:title="@string/color_mode_balance_blue"
             android:min="25"
