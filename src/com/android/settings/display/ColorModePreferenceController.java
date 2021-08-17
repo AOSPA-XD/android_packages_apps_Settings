@@ -1,4 +1,4 @@
-/*
+ /*
  * Copyright (C) 2017 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
@@ -33,18 +33,14 @@ public class ColorModePreferenceController extends BasePreferenceController {
     public int getAvailabilityStatus() {
         final int[] availableColorModes = mContext.getResources().getIntArray(
                 com.android.internal.R.array.config_availableColorModes);
-        return AVAILABLE; /* mContext.getSystemService(ColorDisplayManager.class)
-                .isDeviceColorManaged()
+        return availableColorModes.length == 0 ? UNSUPPORTED_ON_DEVICE :
+                mContext.getSystemService(ColorDisplayManager.class).isDeviceColorManaged()
                 && !ColorDisplayManager.areAccessibilityTransformsEnabled(mContext) ?
-                AVAILABLE : DISABLED_FOR_USER; */
+                AVAILABLE : DISABLED_FOR_USER;
     }
 
     @Override
     public CharSequence getSummary() {
-        if (!getColorDisplayManager().isDeviceColorManaged()) {
-            return mContext.getText(R.string.color_mode_balance_summary);
-        }
-
         final int colorMode = getColorDisplayManager().getColorMode();
         if (colorMode == ColorDisplayManager.COLOR_MODE_AUTOMATIC) {
             return mContext.getText(R.string.color_mode_option_automatic);
